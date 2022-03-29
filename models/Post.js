@@ -2,12 +2,12 @@
 const db = require('./db');
 
 const Post = db.sequelize.define('postagens', {
-    titulo:{
+    titulo: {
         typo: db.Sequelize.STRING,
     },
-    conteudo:{
+    conteudo: {
         typo: db.Sequelize.STRING
     }
 });
 
-Post.sync({force: true})
+//Post.sync({force: true})
